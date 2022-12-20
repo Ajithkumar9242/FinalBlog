@@ -1,0 +1,36 @@
+.class-comp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+ 
+    display: grid;
+    gap: 1ch;
+    position: relative;
+    max-width: 190px;
+  }
+  
+  .input-field {
+    padding: 0.5em 0.75em;
+    border-radius: 0.2em;
+    border: 1px solid black;
+    font-size: 1rem;
+    letter-spacing: 0.1ch;
+    width: 100%;
+  }
+  
+
+  
+
+
+  
+  .input-label {
+    
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-weight: 500;
+  }
+  

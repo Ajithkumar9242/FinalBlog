@@ -1,0 +1,32 @@
+<%- include("header"); -%>
+
+<h1>HOME</h1>
+<h5>
+   All The Posts Will Be Displayed Here 
+</h5>
+<div class="root">
+
+<% posts.forEach(function(post) { %>
+       
+    <div class="card">
+        <div class="title">
+        <h1> <%= post.title.substring(0,10) %> </h1>
+        </div>
+        <div class="content">
+            
+    <p> <%= post.content.substring(0,30) + " ..." %>
+    </p>
+
+    <a href="/posts/<%= post._id %>">Read More</a>
+    <p class="text-muted">Published on: <%= post.postedAt %> </p>
+    <p class="text-muted">Created at: <%= post.createdAt %> </p>
+
+    <a href="/update/<%= post._id %>">Update</a>
+
+
+</div>
+    
+    </div>
+<%  }) %>
+
+</div>
